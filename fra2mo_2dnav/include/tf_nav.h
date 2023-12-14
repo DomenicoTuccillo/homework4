@@ -13,14 +13,21 @@ class TF_NAV {
         void run();
         void tf_listener_fun();
         void position_pub();
+        // Aggiunti listener
         void goal_listener_1();
         void goal_listener_2();
         void goal_listener_3();
         void goal_listener_4();
+        void goal_listener_5();
+        void goal_listener_6();
+        void goal_listener_7();
+        void goal_listener_8();
         void send_goal();
+        //aggiunta funzione per stampare la posa dell'aruco
+        void pose_retrive();
 
     private:
-
+        
         ros::NodeHandle _nh;
 
         ros::Publisher _position_pub;
@@ -30,8 +37,33 @@ class TF_NAV {
         Eigen::Vector3d _cur_pos;
         Eigen::Vector4d _cur_or;
 
-        Eigen::Vector3d _goal_pos;
-        Eigen::Vector4d _goal_or;
+        // Aggiunte variabili contenenti le tf
+        Eigen::Vector3d _goal1_pos;
+        Eigen::Vector4d _goal1_or;
+
+        Eigen::Vector3d _goal2_pos;
+        Eigen::Vector4d _goal2_or;
+
+        Eigen::Vector3d _goal3_pos;
+        Eigen::Vector4d _goal3_or;
+
+        Eigen::Vector3d _goal4_pos;
+        Eigen::Vector4d _goal4_or;
+
+        //Tf aggiuntive per esplorare tutta la mappa
+        Eigen::Vector3d _goal5_pos;
+        Eigen::Vector4d _goal5_or;
+        
+        Eigen::Vector3d _goal6_pos;
+        Eigen::Vector4d _goal6_or;
+
+        Eigen::Vector3d _goal7_pos;
+        Eigen::Vector4d _goal7_or;
+
+        //tf aggiuntiva per il goal marker 
+        Eigen::Vector3d _goal8_pos;
+        Eigen::Vector4d _goal8_or;
+        
         typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
 
