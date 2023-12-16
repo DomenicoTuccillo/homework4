@@ -23,8 +23,6 @@ class TF_NAV {
         void goal_listener_7();
         void goal_listener_8();
         void send_goal();
-        //aggiunta funzione per stampare la posa dell'aruco
-        void pose_retrive();
 
     private:
         
