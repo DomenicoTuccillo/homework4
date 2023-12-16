@@ -12,7 +12,11 @@ class TF_NAV {
         TF_NAV();
         void run();
         void tf_listener_fun();
+        
         void position_pub();
+        
+        void broadcast_listener();
+
         // Aggiunti listener
         void goal_listener_1();
         void goal_listener_2();
@@ -29,6 +33,7 @@ class TF_NAV {
         ros::NodeHandle _nh;
 
         ros::Publisher _position_pub;
+        ros::Publisher _aruco_position_pub;
 
         Eigen::Vector3d _home_pos;
 
