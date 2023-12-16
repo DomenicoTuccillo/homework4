@@ -9,7 +9,7 @@
       <visual name="tag">
         <geometry>
           <box>
-            <size>0.30 0.30 0.002</size>
+            <size>0.10 0.10 0.002</size>
           </box>
         </geometry>
         <material>
@@ -23,7 +23,7 @@
       <visual name="support">
         <geometry>
           <box>
-            <size>0.32 0.32 0.001</size>
+            <size>0.12 0.12 0.001</size>
           </box>
         </geometry>
         <material>Gazebo/White</material> 
@@ -32,7 +32,7 @@
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.32 0.32 0.001</size>
+            <size>0.12 0.12 0.001</size>
           </box>
         </geometry>
       </collision>
